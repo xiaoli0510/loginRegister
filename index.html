@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>account</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <form class="form-login" id="formLogin">
+        <h2>登录</h2>
+        <div class="item">
+           <img src="./img/user.png">
+            <input type="text" placeholder="请输入手机号码" id="phone">
+        </div>
+        <div class="item">
+                <img src="./img/pwd.png">
+                <input type="password" placeholder="请输入6-16位数密码" minlength="6" maxlength="16" id="pwd">
+        </div>
+       <div class="btn-area clearfix">
+            <button type="button" class="switch fr" id="switchReg">立即注册</button>
+       </div>
+        <button type="button" class="login" id="login">登录</button>
+    </form>
+    <form class="form-register  hide" id="formReg">
+            <h2>注册</h2>
+            <div class="item">
+                    <img src="./img/user.png">
+                    <input type="text" placeholder="请输入手机号码" id="phoneReg">
+                    <button class="code-btn" id="codeBtn">获取验证码</button>
+            </div>
+            <div class="item">
+                    <img src="./img/code.png">
+                    <input type="text" placeholder="请输入6位数验证码" maxlength="6" id="codeReg">
+            </div>
+            <div class="item">
+                    <img src="./img/pwd.png">
+                    <input type="password" placeholder="请输入6-16位数密码" minlength="6" maxlength="16" id="pwdReg">
+            </div>
+           <div class="btn-area clearfix">
+                <button type="button" class="switch fr" id="switchLogin">已有账号，立即登录</button>
+           </div>
+            <button type="button" class="register" id="register">注册</button>
+        </form>
+    <script type="text/javascript" src="./js/rem.js"></script>
+    <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
